@@ -1,0 +1,11 @@
+<div class="main">
+  <div class="container">
+    <app-header [title]="'Currency Exchanger'" [hiddenBackToHome]="true"></app-header>
+    <app-convert [hiddenDetails]="false"></app-convert>
+    <div class="container-chart">
+      <canvas id="MyChart">{{ chart }}</canvas>
+
+    </div>
+  </div>
+
+</div>

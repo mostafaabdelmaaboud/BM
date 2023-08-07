@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+  outline: 0 !important;
+}
+
+.p-dropdown:not(.p-disabled):hover {
+  border-color: #ced4da !important;
+}
+
+script[src='main.js']+div {
+  display: none !important;
+}
+
+.mat-typography {
+  letter-spacing: initial !important;
+}
+
+.button-yellow {
+  background-color: #e7bd3e !important;
+  border: 1px solid #e7bd3e !important;
+}
+
+// Start responsive mat-table
+.mobile-label {
+  display: none !important;
+}
+
+@media(min-width: 768px) {
+  th.mat-header-cell {
+    width: 13%;
+  }
+}
+
+@media(max-width: 992px) {
+  .layOut-language {
+    width: initial;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .layOut-language {
+    +button {
+      display: block;
+    }
+  }
+
+  .detail-text,
+  .nav-item {
+    margin-bottom: 15px !important;
+  }
+
+  .nav-item a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+  }
+
+  .columnActionTable {
+    width: initial !important;
+    padding: 0 !important;
+    height: 100%;
+    margin: 0 !important;
+    text-align: center;
+    padding: 0 10px !important;
+
+    button {
+      display: block;
+      width: 100%;
+      margin: 0 !important;
+      margin-bottom: 8px !important;
+    }
+
+    button:last-of-type {
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .mobile-label {
+    width: 80px !important;
+    display: inline-block !important;
+    font-weight: bold;
+  }
+
+  .columnActionTable {
+    width: 100% !important;
+    padding: 15px 0 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mat-row {
+    display: flex;
+    flex-direction: column !important;
+    align-items: start !important;
+    padding: 8px 24px;
+    height: initial !important;
+  }
+
+  .image-td {
+    width: 100% !important;
+  }
+
+  mat-header-cell,
+  .mat-cell,
+  .mat-footer-cell {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0 !important;
+  }
+
+  .mat-header-row {
+    display: none !important;
+  }
+}
+
+@media(max-width: 600px) {}
+
+// End responsive mat-table

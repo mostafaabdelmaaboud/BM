@@ -1,0 +1,23 @@
+.title {
+  margin: 5px;
+}
+
+.popular-currency {
+  min-height: 85px;
+  border: 1px solid #e6bc3e;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-popular-currencies {
+  padding: 20px 0;
+}
+
+.section-popular-currencies {
+  margin-bottom: 15px;
+}
